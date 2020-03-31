@@ -1,0 +1,347 @@
+<!DOCTYPE UI><UI version="3.0" stdsetdef="1">
+<class>prodform</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>prodform</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>476</width>
+            <height>197</height>
+        </rect>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>500</width>
+            <height>500</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>Data transfer</string>
+    </property>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>Label1</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>180</x>
+                <y>10</y>
+                <width>120</width>
+                <height>21</height>
+            </rect>
+        </property>
+        <property name="font">
+            <font>
+                <pointsize>12</pointsize>
+                <bold>1</bold>
+                <underline>1</underline>
+            </font>
+        </property>
+        <property name="text">
+            <string>Data transfer</string>
+        </property>
+    </widget>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>Label2</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>180</x>
+                <y>40</y>
+                <width>116</width>
+                <height>20</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Test parameters:</string>
+        </property>
+    </widget>
+    <widget class="QLayoutWidget">
+        <property name="name">
+            <cstring>Layout46</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>70</y>
+                <width>454</width>
+                <height>51</height>
+            </rect>
+        </property>
+        <hbox>
+            <property name="name">
+                <cstring>unnamed</cstring>
+            </property>
+            <property name="margin">
+                <number>0</number>
+            </property>
+            <property name="spacing">
+                <number>6</number>
+            </property>
+            <widget class="QLayoutWidget">
+                <property name="name">
+                    <cstring>Layout42</cstring>
+                </property>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <property name="margin">
+                        <number>0</number>
+                    </property>
+                    <property name="spacing">
+                        <number>6</number>
+                    </property>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>Label3</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Speed, Mbps</string>
+                        </property>
+                    </widget>
+                    <widget class="QLineEdit">
+                        <property name="name">
+                            <cstring>speedEdit</cstring>
+                        </property>
+                        <property name="text">
+                            <string></string>
+                        </property>
+                        <property name="maxLength">
+                            <number>4</number>
+                        </property>
+                        <property name="inputMask">
+                            <string>9999; </string>
+                        </property>
+                    </widget>
+                </vbox>
+            </widget>
+            <spacer>
+                <property name="name" stdset="0">
+                    <cstring>Spacer5</cstring>
+                </property>
+                <property name="orientation">
+                    <enum>Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                    <enum>Expanding</enum>
+                </property>
+                <property name="sizeHint">
+                    <size>
+                        <width>20</width>
+                        <height>20</height>
+                    </size>
+                </property>
+            </spacer>
+            <widget class="QLayoutWidget">
+                <property name="name">
+                    <cstring>Layout44</cstring>
+                </property>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <property name="margin">
+                        <number>0</number>
+                    </property>
+                    <property name="spacing">
+                        <number>6</number>
+                    </property>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>Label4</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Package lengh, byte</string>
+                        </property>
+                    </widget>
+                    <widget class="QLineEdit">
+                        <property name="name">
+                            <cstring>lengthEdit</cstring>
+                        </property>
+                        <property name="text">
+                            <string></string>
+                        </property>
+                        <property name="maxLength">
+                            <number>4</number>
+                        </property>
+                        <property name="inputMask">
+                            <string>9999; </string>
+                        </property>
+                    </widget>
+                </vbox>
+            </widget>
+            <spacer>
+                <property name="name" stdset="0">
+                    <cstring>Spacer6</cstring>
+                </property>
+                <property name="orientation">
+                    <enum>Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                    <enum>Expanding</enum>
+                </property>
+                <property name="sizeHint">
+                    <size>
+                        <width>20</width>
+                        <height>20</height>
+                    </size>
+                </property>
+            </spacer>
+            <widget class="QLayoutWidget">
+                <property name="name">
+                    <cstring>Layout45</cstring>
+                </property>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <property name="margin">
+                        <number>0</number>
+                    </property>
+                    <property name="spacing">
+                        <number>6</number>
+                    </property>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>Label5</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Interval, sec.</string>
+                        </property>
+                    </widget>
+                    <widget class="QLineEdit">
+                        <property name="name">
+                            <cstring>timeoutEdit</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>true</bool>
+                        </property>
+                        <property name="maxLength">
+                            <number>4</number>
+                        </property>
+                        <property name="inputMask">
+                            <string>9999; </string>
+                        </property>
+                    </widget>
+                </vbox>
+            </widget>
+        </hbox>
+    </widget>
+    <widget class="QLayoutWidget">
+        <property name="name">
+            <cstring>Layout47</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>140</y>
+                <width>454</width>
+                <height>28</height>
+            </rect>
+        </property>
+        <hbox>
+            <property name="name">
+                <cstring>unnamed</cstring>
+            </property>
+            <property name="margin">
+                <number>0</number>
+            </property>
+            <property name="spacing">
+                <number>6</number>
+            </property>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>saveButton</cstring>
+                </property>
+                <property name="text">
+                    <string>&amp;Save</string>
+                </property>
+            </widget>
+            <spacer>
+                <property name="name" stdset="0">
+                    <cstring>Spacer7</cstring>
+                </property>
+                <property name="orientation">
+                    <enum>Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                    <enum>Expanding</enum>
+                </property>
+                <property name="sizeHint">
+                    <size>
+                        <width>20</width>
+                        <height>20</height>
+                    </size>
+                </property>
+            </spacer>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>sendButton</cstring>
+                </property>
+                <property name="text">
+                    <string>&amp;Send task</string>
+                </property>
+            </widget>
+            <spacer>
+                <property name="name" stdset="0">
+                    <cstring>Spacer8</cstring>
+                </property>
+                <property name="orientation">
+                    <enum>Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                    <enum>Expanding</enum>
+                </property>
+                <property name="sizeHint">
+                    <size>
+                        <width>20</width>
+                        <height>20</height>
+                    </size>
+                </property>
+            </spacer>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>faultButton</cstring>
+                </property>
+                <property name="text">
+                    <string>&amp;Throw off</string>
+                </property>
+            </widget>
+        </hbox>
+    </widget>
+</widget>
+<connections>
+    <connection>
+        <sender>saveButton</sender>
+        <signal>clicked()</signal>
+        <receiver>prodform</receiver>
+        <slot>save_struct()</slot>
+    </connection>
+    <connection>
+        <sender>faultButton</sender>
+        <signal>clicked()</signal>
+        <receiver>prodform</receiver>
+        <slot>abolition()</slot>
+    </connection>
+    <connection>
+        <sender>sendButton</sender>
+        <signal>clicked()</signal>
+        <receiver>prodform</receiver>
+        <slot>delivery()</slot>
+    </connection>
+</connections>
+<slots>
+    <slot access="protected" returnType="int">abolition()</slot>
+    <slot access="protected" returnType="int">delivery()</slot>
+    <slot>MainAddress()</slot>
+    <slot access="protected">OutInfo()</slot>
+    <slot access="protected">save_struct()</slot>
+    <slot access="protected" returnType="int">SendMessage()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

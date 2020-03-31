@@ -1,0 +1,158 @@
+<!DOCTYPE UI><UI version="3.0" stdsetdef="1">
+<class>mainaddress</class>
+<widget class="QMainWindow">
+    <property name="name">
+        <cstring>mainaddress</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>429</width>
+            <height>346</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Display information system</string>
+    </property>
+</widget>
+<menubar>
+    <property name="name">
+        <cstring>menubar</cstring>
+    </property>
+    <item text="&amp;Main menu" name="PopupMenu_2">
+        <separator/>
+        <action name="Regime"/>
+        <action name="Productivity"/>
+        <separator/>
+        <action name="Traffics"/>
+        <separator/>
+        <action name="onExit"/>
+    </item>
+</menubar>
+<toolbars>
+    <toolbar dock="2">
+        <property name="name">
+            <cstring>Toolbar_4</cstring>
+        </property>
+        <property name="label">
+            <string>Toolbar_4</string>
+        </property>
+        <action name="onExit"/>
+    </toolbar>
+</toolbars>
+<actions>
+    <action>
+        <property name="name">
+            <cstring>onExit</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>image0</iconset>
+        </property>
+        <property name="text">
+            <string>Close</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Close</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>Regime</cstring>
+        </property>
+        <property name="text">
+            <string>Display mode</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Display mode</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>Productivity</cstring>
+        </property>
+        <property name="text">
+            <string>System performance</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;System performance</string>
+        </property>
+    </action>
+    <actiongroup>
+        <property name="name">
+            <cstring>mainTraffics</cstring>
+        </property>
+        <property name="text">
+            <string>ActionGroup</string>
+        </property>
+        <property name="usesDropDown">
+            <bool>false</bool>
+        </property>
+        <actiongroup>
+            <property name="name">
+                <cstring>Traffics</cstring>
+            </property>
+            <property name="text">
+                <string>Traffic</string>
+            </property>
+            <property name="menuText">
+                <string>&amp;Traffic</string>
+            </property>
+            <property name="usesDropDown">
+                <bool>true</bool>
+            </property>
+            <action>
+                <property name="name">
+                    <cstring>IP_Data</cstring>
+                </property>
+                <property name="toggleAction">
+                    <bool>true</bool>
+                </property>
+                <property name="text">
+                    <string>IP-data</string>
+                </property>
+                <property name="menuText">
+                    <string>&amp;IP-data</string>
+                </property>
+            </action>
+        </actiongroup>
+    </actiongroup>
+</actions>
+<images>
+    <image name="image0">
+        <data format="XPM.GZ" length="3726">789c55974973154b0e85f7fc0a07da111d7a3565656674f4023c3078c0036043472f545955b6f184ed6bb0ddd1ffbdb3cea97b1f5cb1f948e5241d29cb7fbd5a3bd9df5d7bf5d78bfb852dced35a3ab3bbb557fdc3d5d5d3bffff3afffbe7859b66bd3bfd8ac552ffff1e2e5c1622dadeddd5c0f13d8790629f003ff24b72d59df91432477028e452ce97f04eeb375e030715964ebc1dfc1b5af0b03bf0537d970187b58718dfd3e835d4c05e79f81db6ccdc452837d3687f115571ee37be090adc57a2d399f1ff7954770cc067ffd04b66c01fc0b9cb2e1bcd290bde37ce378df146502231ee5e0635982afc9a1e6f9f562e2ca65c3fd3a05e7d3368c9f07a72a3511fb39b2ef783ec1f9abdef725c695fe434c8caf22de756955c5fdb15f5d055f31be15b8a91b877808e6d72e8c25eff34c8ef37efa051c635f71fd084e3654cc1f79acc716f1978f1337d3fe986f87e0bc618bf308f2dfb496058071dca7f18df71c7f02f76635e2635be0b1195be6bf9cd815aef0e405b874a5e77aa7e0fcf3982fb8af0b2e789e07f176317847bde07e2e4d06ffdd257bdeef0adc7b73d08320df6e7423f7d7f7e450ba11fed04f0b81829fc87ee47c839edb6a32ac77bee480f34b247745437d06727235f26da8bfb69e0c5c2c39e23e0abdb44ddb04aecffd9a2e524f8afa6cf32fa07e14f5d7863604c6e760c991f57b0cb636b68887a21fb45ddb05dee7db9223cfbb4f4e43cdf937e014dd1c2fe4bfeddb7ece875bf2bc9f916315183fd46f3bb483913f90fdd8723ef71bdbd178df4d72ef1ae60f7af4852f8c7a3820f74dcd7c6d8073c330c4c336574c7ddc817381cee3eb2be6f86b721c3cefafe4de1aae7f0bcefdce506fb64d3673acb77b702e00637d433fdef5a1211fce1c1bee3f805bdf1ae33f82f3cfd89f84dccdf932f42b1f7de4f9a55831f221a8276f793af999dc778c9ff07edd5034d4ff0e38f9d451af17e4be753cef0d79708ee3bc6fee571df377490efd5cbfa81f3f640fc6a39f7998f574441eea06fa10e8cf8f7eeca87ff4ef50fa61d6fb0339941def7bb662f6a737e4a1657dd95770152aae278b15d3ff74c5ec9797e43e39ea15fd2234a19efd918fdc6e5cc7febd4e1eccf17cd06ff0c1f37c8afa0ff917a9e79325cff91a96dc713f9e3ff7af79fd1f604b3deb45aec843d572fec6cc23fbbdd13f05eb588f8f336703df90a337f6d304cef9a2def561c91de2a78cef18c6b97e77c8d644e85f11af387d20f0fb01fa8c7870c18b2527ea057a8855ac3aeab703d7b1e2b85ecf9c050c467e72736b22f58bfe185d7489f16d56ccf7ec899c1f78fa733d3716ec278a7a8cb9dd25e6eb6fe6fd91df381510ef8ffe1843ec993f817e63fe257e3f207fd1a2319e8a7e12534cf37adb646b8df1e2fcac7efa0bfa6b1ce338ebef64c9f37db656ccf9d09715f97f78be826c4562be4f666e797f851e2c77b339bec8b7d5d9707f5d5f72e27ae8c7d664e67ed0a3396b7aeacf661e8c7a42fe6c0a00df1fe8d3f003df2e795eff999c8691df7f5caf9b0c5c2fb9673fc2fb6d435f7b8e43ef36dad8335e5be43e7f21611cfdbdabbbbaa73ffa5bd7a472e0f9d06f3bd7b981f93f9e3931fe8a7aef626a667ff4cf7c9c6ea09ef1bd91bdf3030846feba21b9817a407da4aa1f47ea0ff14e750a03cf0b7de4628c03fb09fa539a04c37e88f73a598a3de387f1be1e02d753bc777dd3370319efdd500ee5887c09f231b46339fbe3fd1c72bae671e46348f90367fee380a6a2a69d26ed75d0514ff54ccff5bb5efce173a9577aad37fa436ff54eef75a10ffa537ffde1f398d778d2677dad6f745d377453b7f4edef3efa4edfeb07ddd61dddd53dfda8fb7aa0877aa49f7ef3f9ac5ff4584ff4ab7ed3424badb4d6461d7db455af41a3a888987492a497414639953339a78f7c970bb9942bb9961bf921b77227f77974210ff2537ec9237c9ee4595ecb1b59970dd9942d792befe4bd7c906dd9915dd983cf47d99703399423f9249fe58b1ccb897c956f52482995f04d69c4492b5e426e046a93da3b4bd64f41b7533b439f3b877db70bbbb42bbbb61bfb61b77667f7d916f6f0f7ddeda7fdb2477bb2677b6d6f6c3ddb866dda96bdfd3dcef6cededb07dbb61ddbb53dfb68fb76608776f487cf27fb6c5fecd84eecab7dcb3d217fb5e74a3fffdd277bf1644daee9fcd56e61a283c59f3eb367ecb4936994f6f27fff7cf17f73424cdf</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>onExit</sender>
+        <signal>activated()</signal>
+        <receiver>mainaddress</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>Productivity</sender>
+        <signal>activated()</signal>
+        <receiver>mainaddress</receiver>
+        <slot>connectToProduct()</slot>
+    </connection>
+    <connection>
+        <sender>Regime</sender>
+        <signal>activated()</signal>
+        <receiver>mainaddress</receiver>
+        <slot>connectToRegime()</slot>
+    </connection>
+    <connection>
+        <sender>IP_Data</sender>
+        <signal>activated()</signal>
+        <receiver>mainaddress</receiver>
+        <slot>connectToIPData()</slot>
+    </connection>
+</connections>
+<slots>
+    <slot>connectToIPData()</slot>
+    <slot>connectToProduct()</slot>
+    <slot>connectToRegime()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

@@ -1,0 +1,235 @@
+<!DOCTYPE UI><UI version="3.0" stdsetdef="1">
+<class>regimeform</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>regimeform</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>384</width>
+            <height>205</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Setting display mode</string>
+    </property>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>Label1</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>100</x>
+                <y>10</y>
+                <width>190</width>
+                <height>21</height>
+            </rect>
+        </property>
+        <property name="font">
+            <font>
+                <pointsize>12</pointsize>
+                <bold>1</bold>
+                <underline>1</underline>
+            </font>
+        </property>
+        <property name="text">
+            <string>Setting display mode:</string>
+        </property>
+    </widget>
+    <widget class="QLayoutWidget">
+        <property name="name">
+            <cstring>Layout57</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>21</x>
+                <y>50</y>
+                <width>340</width>
+                <height>96</height>
+            </rect>
+        </property>
+        <vbox>
+            <property name="name">
+                <cstring>unnamed</cstring>
+            </property>
+            <property name="margin">
+                <number>0</number>
+            </property>
+            <property name="spacing">
+                <number>6</number>
+            </property>
+            <widget class="QLayoutWidget">
+                <property name="name">
+                    <cstring>Layout34</cstring>
+                </property>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <property name="margin">
+                        <number>0</number>
+                    </property>
+                    <property name="spacing">
+                        <number>6</number>
+                    </property>
+                    <widget class="QLayoutWidget">
+                        <property name="name">
+                            <cstring>Layout32</cstring>
+                        </property>
+                        <hbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <property name="margin">
+                                <number>0</number>
+                            </property>
+                            <property name="spacing">
+                                <number>6</number>
+                            </property>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>Label2</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Presentation model</string>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit">
+                                <property name="name">
+                                    <cstring>modelEdit</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>1</string>
+                                </property>
+                            </widget>
+                        </hbox>
+                    </widget>
+                    <widget class="QLayoutWidget">
+                        <property name="name">
+                            <cstring>Layout33</cstring>
+                        </property>
+                        <hbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <property name="margin">
+                                <number>0</number>
+                            </property>
+                            <property name="spacing">
+                                <number>6</number>
+                            </property>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>Label3</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Form number</string>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit">
+                                <property name="name">
+                                    <cstring>numberEdit</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>1</string>
+                                </property>
+                            </widget>
+                        </hbox>
+                    </widget>
+                </vbox>
+            </widget>
+            <widget class="QLayoutWidget">
+                <property name="name">
+                    <cstring>Layout56</cstring>
+                </property>
+                <hbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <property name="margin">
+                        <number>0</number>
+                    </property>
+                    <property name="spacing">
+                        <number>6</number>
+                    </property>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>sendButton</cstring>
+                        </property>
+                        <property name="text">
+                            <string>&amp;Transfer to</string>
+                        </property>
+                    </widget>
+                    <spacer>
+                        <property name="name" stdset="0">
+                            <cstring>Spacer3</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Horizontal</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>20</width>
+                                <height>20</height>
+                            </size>
+                        </property>
+                    </spacer>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>closeButton</cstring>
+                        </property>
+                        <property name="text">
+                            <string>&amp;Close</string>
+                        </property>
+                    </widget>
+                </hbox>
+            </widget>
+        </vbox>
+    </widget>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>Label122</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>110</x>
+                <y>160</y>
+                <width>164</width>
+                <height>35</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>0 - to display the mimic;
+1 - to display the form.</string>
+        </property>
+    </widget>
+</widget>
+<connections>
+    <connection>
+        <sender>sendButton</sender>
+        <signal>clicked()</signal>
+        <receiver>regimeform</receiver>
+        <slot>onSend()</slot>
+    </connection>
+    <connection>
+        <sender>closeButton</sender>
+        <signal>clicked()</signal>
+        <receiver>regimeform</receiver>
+        <slot>close()</slot>
+    </connection>
+</connections>
+<slots>
+    <slot>MainAddress()</slot>
+    <slot>onClose()</slot>
+    <slot access="protected">OllSave()</slot>
+    <slot access="protected" returnType="int">onSend()</slot>
+    <slot access="protected">OutInfo()</slot>
+    <slot access="protected" returnType="int">SendMessage()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

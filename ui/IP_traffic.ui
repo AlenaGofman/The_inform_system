@@ -1,0 +1,1015 @@
+<!DOCTYPE UI><UI version="3.0" stdsetdef="1">
+<class>IPForm</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>IPForm</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>719</width>
+            <height>529</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>IP_traffic</string>
+    </property>
+    <widget class="QLayoutWidget">
+        <property name="name">
+            <cstring>Layout24</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>530</x>
+                <y>70</y>
+                <width>179</width>
+                <height>60</height>
+            </rect>
+        </property>
+        <vbox>
+            <property name="name">
+                <cstring>unnamed</cstring>
+            </property>
+            <property name="margin">
+                <number>0</number>
+            </property>
+            <property name="spacing">
+                <number>6</number>
+            </property>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>Label8</cstring>
+                </property>
+                <property name="text">
+                    <string>Select type IP_traffic</string>
+                </property>
+            </widget>
+            <widget class="QLayoutWidget">
+                <property name="name">
+                    <cstring>Layout84</cstring>
+                </property>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <property name="margin">
+                        <number>0</number>
+                    </property>
+                    <property name="spacing">
+                        <number>6</number>
+                    </property>
+                    <widget class="QComboBox">
+                        <item>
+                            <property name="text">
+                                <string>----</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Данные</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Речь</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Видео</string>
+                            </property>
+                        </item>
+                        <property name="name">
+                            <cstring>dataBox</cstring>
+                        </property>
+                    </widget>
+                </vbox>
+            </widget>
+        </vbox>
+    </widget>
+    <widget class="QLayoutWidget">
+        <property name="name">
+            <cstring>Layout72</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>430</y>
+                <width>620</width>
+                <height>28</height>
+            </rect>
+        </property>
+        <hbox>
+            <property name="name">
+                <cstring>unnamed</cstring>
+            </property>
+            <property name="margin">
+                <number>0</number>
+            </property>
+            <property name="spacing">
+                <number>6</number>
+            </property>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>saveButton</cstring>
+                </property>
+                <property name="text">
+                    <string>&amp;Save</string>
+                </property>
+            </widget>
+            <spacer>
+                <property name="name" stdset="0">
+                    <cstring>Spacer12</cstring>
+                </property>
+                <property name="orientation">
+                    <enum>Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                    <enum>Expanding</enum>
+                </property>
+                <property name="sizeHint">
+                    <size>
+                        <width>20</width>
+                        <height>20</height>
+                    </size>
+                </property>
+            </spacer>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>sendButton</cstring>
+                </property>
+                <property name="text">
+                    <string>&amp;Send task</string>
+                </property>
+            </widget>
+            <spacer>
+                <property name="name" stdset="0">
+                    <cstring>Spacer12_2</cstring>
+                </property>
+                <property name="orientation">
+                    <enum>Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                    <enum>Expanding</enum>
+                </property>
+                <property name="sizeHint">
+                    <size>
+                        <width>20</width>
+                        <height>20</height>
+                    </size>
+                </property>
+            </spacer>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>faultButton</cstring>
+                </property>
+                <property name="text">
+                    <string>&amp;Throw off</string>
+                </property>
+            </widget>
+        </hbox>
+    </widget>
+    <widget class="QLayoutWidget">
+        <property name="name">
+            <cstring>Layout88</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>470</y>
+                <width>161</width>
+                <height>49</height>
+            </rect>
+        </property>
+        <vbox>
+            <property name="name">
+                <cstring>unnamed</cstring>
+            </property>
+            <property name="margin">
+                <number>0</number>
+            </property>
+            <property name="spacing">
+                <number>6</number>
+            </property>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>Label7</cstring>
+                </property>
+                <property name="text">
+                    <string>Stream ID</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>IdEdit</cstring>
+                </property>
+                <property name="maxLength">
+                    <number>8</number>
+                </property>
+                <property name="readOnly">
+                    <bool>true</bool>
+                </property>
+            </widget>
+        </vbox>
+    </widget>
+    <widget class="QGroupBox">
+        <property name="name">
+            <cstring>GroupBox12</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>60</y>
+                <width>250</width>
+                <height>70</height>
+            </rect>
+        </property>
+        <property name="title">
+            <string>IP_sender</string>
+        </property>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>Layout66</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>30</y>
+                    <width>228</width>
+                    <height>26</height>
+                </rect>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <property name="spacing">
+                    <number>6</number>
+                </property>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>senderIP1</cstring>
+                    </property>
+                    <property name="maxLength">
+                        <number>3</number>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignHCenter</set>
+                    </property>
+                    <property name="inputMask">
+                        <string>999; </string>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>Label59</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <pointsize>14</pointsize>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>.</string>
+                    </property>
+                    <property name="alignment">
+                        <set>WordBreak|AlignCenter</set>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>senderIP2</cstring>
+                    </property>
+                    <property name="maxLength">
+                        <number>3</number>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignHCenter</set>
+                    </property>
+                    <property name="inputMask">
+                        <string>999; </string>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>Label59_2</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <pointsize>14</pointsize>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>.</string>
+                    </property>
+                    <property name="alignment">
+                        <set>WordBreak|AlignCenter</set>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>senderIP3</cstring>
+                    </property>
+                    <property name="maxLength">
+                        <number>3</number>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignHCenter</set>
+                    </property>
+                    <property name="inputMask">
+                        <string>999; </string>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>Label59_3</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <pointsize>14</pointsize>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>.</string>
+                    </property>
+                    <property name="alignment">
+                        <set>WordBreak|AlignCenter</set>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>senderIP4</cstring>
+                    </property>
+                    <property name="maxLength">
+                        <number>3</number>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignHCenter</set>
+                    </property>
+                    <property name="inputMask">
+                        <string>999; </string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+    </widget>
+    <widget class="QGroupBox">
+        <property name="name">
+            <cstring>VideoGroupBox</cstring>
+        </property>
+        <property name="enabled">
+            <bool>false</bool>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>140</y>
+                <width>310</width>
+                <height>200</height>
+            </rect>
+        </property>
+        <property name="title">
+            <string>Video codecs</string>
+        </property>
+        <widget class="QListBox">
+            <item>
+                <property name="text">
+                    <string>H.261     до  128000     490        1/30  </string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>H.261     до  128000     600        1/40  </string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>H.261     до  128000     760        1/50  </string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>H.261     до  64000       225        1/30  </string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>H.261     до  64000       280        1/40    </string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>H.261     до  64000       380        1/50  </string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>VideoListBox</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>40</y>
+                    <width>290</width>
+                    <height>150</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>Label91</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>20</y>
+                    <width>50</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <bold>1</bold>
+                </font>
+            </property>
+            <property name="text">
+                <string>Video</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>Label92</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>80</x>
+                    <y>20</y>
+                    <width>79</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>&lt;b&gt;Speed&lt;/b&gt;</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>Label92_2</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>160</x>
+                    <y>20</y>
+                    <width>62</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>&lt;b&gt;Size&lt;/b&gt;</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>Label92_2_2</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>220</x>
+                    <y>20</y>
+                    <width>85</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>&lt;b&gt;Frequency&lt;/b&gt;</string>
+            </property>
+        </widget>
+    </widget>
+    <widget class="QGroupBox">
+        <property name="name">
+            <cstring>GroupBox13</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>270</x>
+                <y>60</y>
+                <width>250</width>
+                <height>70</height>
+            </rect>
+        </property>
+        <property name="title">
+            <string>IP_recipient</string>
+        </property>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>Layout66_2</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>30</y>
+                    <width>228</width>
+                    <height>26</height>
+                </rect>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <property name="spacing">
+                    <number>6</number>
+                </property>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>receiveIP1</cstring>
+                    </property>
+                    <property name="maxLength">
+                        <number>3</number>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignHCenter</set>
+                    </property>
+                    <property name="inputMask">
+                        <string>999; </string>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>Label59_4</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <pointsize>14</pointsize>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>.</string>
+                    </property>
+                    <property name="alignment">
+                        <set>WordBreak|AlignCenter</set>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>receiveIP2</cstring>
+                    </property>
+                    <property name="maxLength">
+                        <number>3</number>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignHCenter</set>
+                    </property>
+                    <property name="inputMask">
+                        <string>999; </string>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>Label59_2_2</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <pointsize>14</pointsize>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>.</string>
+                    </property>
+                    <property name="alignment">
+                        <set>WordBreak|AlignCenter</set>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>receiveIP3</cstring>
+                    </property>
+                    <property name="maxLength">
+                        <number>3</number>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignHCenter</set>
+                    </property>
+                    <property name="inputMask">
+                        <string>999; </string>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>Label59_3_2</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <pointsize>14</pointsize>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>.</string>
+                    </property>
+                    <property name="alignment">
+                        <set>WordBreak|AlignCenter</set>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>receiveIP4</cstring>
+                    </property>
+                    <property name="maxLength">
+                        <number>3</number>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignHCenter</set>
+                    </property>
+                    <property name="inputMask">
+                        <string>999; </string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+    </widget>
+    <widget class="QGroupBox">
+        <property name="name">
+            <cstring>AudioGroupBox</cstring>
+        </property>
+        <property name="enabled">
+            <bool>false</bool>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>330</x>
+                <y>140</y>
+                <width>300</width>
+                <height>200</height>
+            </rect>
+        </property>
+        <property name="title">
+            <string>Audio codecs</string>
+        </property>
+        <widget class="QListBox">
+            <item>
+                <property name="text">
+                    <string>G.723.1(1)      5,3       20          1/30  </string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>G.723.1(2)      6,3       24          1/30  </string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>G.729             8         10          1/10  </string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>G.728             16        10          2/10  </string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>G.711(1)         48        30          2/10  </string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>G.711(2)         56        35          2/10  </string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>G.711(3)         64        40          2/10  </string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>AudioListBox</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>40</y>
+                    <width>280</width>
+                    <height>150</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>Label92_2_2_2</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>200</x>
+                    <y>20</y>
+                    <width>90</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>&lt;b&gt;Frequency&lt;/b&gt;</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>Label92_3</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>100</x>
+                    <y>20</y>
+                    <width>53</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>&lt;b&gt;Speed&lt;/b&gt;</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>Label92_2_3</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>160</x>
+                    <y>20</y>
+                    <width>38</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>&lt;b&gt;Size&lt;/b&gt;</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>Label91_2</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>21</y>
+                    <width>50</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <bold>1</bold>
+                </font>
+            </property>
+            <property name="text">
+                <string>Audio</string>
+            </property>
+        </widget>
+    </widget>
+    <widget class="QGroupBox">
+        <property name="name">
+            <cstring>DataGroupBox</cstring>
+        </property>
+        <property name="enabled">
+            <bool>false</bool>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>340</y>
+                <width>620</width>
+                <height>80</height>
+            </rect>
+        </property>
+        <property name="title">
+            <string>Data</string>
+        </property>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>Layout134</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>3</x>
+                    <y>20</y>
+                    <width>610</width>
+                    <height>51</height>
+                </rect>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <property name="spacing">
+                    <number>6</number>
+                </property>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>Layout67</cstring>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <property name="margin">
+                            <number>0</number>
+                        </property>
+                        <property name="spacing">
+                            <number>6</number>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>Label3</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Package lengh, byte</string>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit">
+                            <property name="name">
+                                <cstring>LengthEdit</cstring>
+                            </property>
+                            <property name="maxLength">
+                                <number>4</number>
+                            </property>
+                            <property name="inputMask">
+                                <string>9999; </string>
+                            </property>
+                        </widget>
+                    </vbox>
+                </widget>
+                <spacer>
+                    <property name="name" stdset="0">
+                        <cstring>Spacer17</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>Layout68</cstring>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <property name="margin">
+                            <number>0</number>
+                        </property>
+                        <property name="spacing">
+                            <number>6</number>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>Label4</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Frequency, Mbps</string>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit">
+                            <property name="name">
+                                <cstring>TempEdit</cstring>
+                            </property>
+                            <property name="maxLength">
+                                <number>4</number>
+                            </property>
+                            <property name="inputMask">
+                                <string>9999; </string>
+                            </property>
+                        </widget>
+                    </vbox>
+                </widget>
+                <spacer>
+                    <property name="name" stdset="0">
+                        <cstring>Spacer17_2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>Layout69</cstring>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <property name="margin">
+                            <number>0</number>
+                        </property>
+                        <property name="spacing">
+                            <number>6</number>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>Label5</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Interval, sec</string>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit">
+                            <property name="name">
+                                <cstring>IntervalEdit</cstring>
+                            </property>
+                            <property name="maxLength">
+                                <number>4</number>
+                            </property>
+                            <property name="inputMask">
+                                <string>9999; </string>
+                            </property>
+                        </widget>
+                    </vbox>
+                </widget>
+            </hbox>
+        </widget>
+    </widget>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>Label0</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>320</x>
+                <y>10</y>
+                <width>97</width>
+                <height>21</height>
+            </rect>
+        </property>
+        <property name="font">
+            <font>
+                <pointsize>12</pointsize>
+                <bold>1</bold>
+                <underline>1</underline>
+            </font>
+        </property>
+        <property name="text">
+            <string>IP_traffic</string>
+        </property>
+    </widget>
+</widget>
+<connections>
+    <connection>
+        <sender>faultButton</sender>
+        <signal>clicked()</signal>
+        <receiver>IPForm</receiver>
+        <slot>abolition()</slot>
+    </connection>
+    <connection>
+        <sender>saveButton</sender>
+        <signal>clicked()</signal>
+        <receiver>IPForm</receiver>
+        <slot>save_struct()</slot>
+    </connection>
+    <connection>
+        <sender>sendButton</sender>
+        <signal>clicked()</signal>
+        <receiver>IPForm</receiver>
+        <slot>delivery()</slot>
+    </connection>
+    <connection>
+        <sender>dataBox</sender>
+        <signal>activated(int)</signal>
+        <receiver>IPForm</receiver>
+        <slot>openTable()</slot>
+    </connection>
+</connections>
+<slots>
+    <slot access="protected" returnType="int">abolition()</slot>
+    <slot access="protected" returnType="int">delivery()</slot>
+    <slot>MainAddress()</slot>
+    <slot access="protected">EntryInfo()</slot>
+    <slot access="protected">open_struct()</slot>
+    <slot>openTable()</slot>
+    <slot access="protected">OutInfo()</slot>
+    <slot access="protected">save_struct()</slot>
+    <slot access="protected" returnType="int">SendMessage()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>
